@@ -8,13 +8,14 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 10px 20px;
+    padding: 15px 20px;
     background-color: #fff;
     border-bottom: 1px solid #ddd;
     position: fixed;
     width: 100%;
     top: 0;
     z-index: 1000;
+    height: 70px;
 }
 
 .logo img {
@@ -35,41 +36,27 @@ header {
     font-weight: bold;
 }
 
-.header-right {
-    display: flex;
-    align-items: center;
-    gap: 20px;
-}
-
-.carryout p {
-    margin: 0;
-    font-size: 14px;
-}
-
-.carryout a {
-    color: #0066cc;
-    text-decoration: none;
-}
-
-.icons img {
-    width: 24px;
-    height: 24px;
-}
-
 .sub-nav {
     background-color: #f8f8f8;
     border-bottom: 1px solid #ddd;
     position: fixed;
-    width: calc(100% - 40px);
-    /* Adjust width to be more compact */
-    top: 60px;
-    /* Position it directly below the main header */
-    z-index: 900;
-    padding: 5px 20px;
-    /* Adjusted padding for a more compact look */
+    width: 100%;
+    left: 0;
+    /* Ensure it starts from the very left */
+    top: 70px;
+    z-index: 1000;
+    padding: 15px 20px;
+    height: 70px;
     display: flex;
-    justify-content: flex-start;
-    /* Align items to the left */
+    flex-direction: column;
+    justify-content: center;
+    box-sizing: border-box;
+}
+
+.sub-nav .title {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
 }
 
 .sub-nav ul {
@@ -85,7 +72,11 @@ header {
     color: #333;
     font-weight: bold;
     font-size: 14px;
-    /* Smaller font size */
+}
+
+.sub-nav a:hover,
+.sub-nav a:focus {
+    text-decoration: underline;
 }
 
 main {
@@ -94,7 +85,7 @@ main {
 }
 
 .menu-section {
-    padding: 20px;
+    padding: 10px;
 }
 
 footer {
@@ -102,11 +93,6 @@ footer {
     padding: 20px;
     background-color: #333;
     color: white;
-}
-
-.social-media img {
-    width: 30px;
-    margin: 0 10px;
 }
 
 html {
