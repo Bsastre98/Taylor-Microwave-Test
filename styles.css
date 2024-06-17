@@ -60,16 +60,13 @@ header {
     background-color: #f8f8f8;
     border-bottom: 1px solid #ddd;
     position: fixed;
-    width: auto;
+    width: calc(100% - 40px);
+    /* Adjust width to be more compact */
     top: 60px;
-    /* Adjust this based on the height of your header */
+    /* Position it directly below the main header */
     z-index: 900;
     padding: 5px 20px;
     /* Adjusted padding for a more compact look */
-    left: 20px;
-    /* Make the sub-nav more compact and aligned to the left */
-    right: 20px;
-    /* Ensure it's not taking full width */
     display: flex;
     justify-content: flex-start;
     /* Align items to the left */
@@ -91,7 +88,7 @@ header {
     /* Smaller font size */
 }
 
-.main {
+main {
     padding-top: 140px;
     /* Adjust this based on the combined height of your header and sub-nav */
 }
