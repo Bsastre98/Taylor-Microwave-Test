@@ -8,20 +8,16 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 20px;
-    background-color: #333;
-    color: white;
-    position: fixed;
-    width: 100%;
-    top: 0;
-    z-index: 1000;
+    padding: 10px 20px;
+    background-color: #fff;
+    border-bottom: 1px solid #ddd;
 }
 
 .logo img {
-    width: 100px;
+    width: 120px;
 }
 
-nav ul {
+.main-nav ul {
     list-style: none;
     display: flex;
     gap: 20px;
@@ -29,20 +25,36 @@ nav ul {
     padding: 0;
 }
 
-nav a {
-    color: white;
+.main-nav a {
+    text-decoration: none;
+    color: #000;
+    font-weight: bold;
+}
+
+.header-right {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.carryout p {
+    margin: 0;
+    font-size: 14px;
+}
+
+.carryout a {
+    color: #0066cc;
     text-decoration: none;
 }
 
+.icons img {
+    width: 24px;
+    height: 24px;
+}
+
 .hero,
-.menu,
-.specials,
-.locations,
-.contact {
-    padding: 100px 20px 20px 20px;
-    /* Adjust for fixed header */
-    margin-top: 60px;
-    /* Adjust for fixed header */
+.menu {
+    padding: 20px;
 }
 
 .product-grid {
