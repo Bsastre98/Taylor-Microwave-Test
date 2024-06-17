@@ -19,7 +19,9 @@ header {
 }
 
 .logo img {
-    width: 120px;
+    width: 100px;
+    margin-bottom: 20px;
+
 }
 
 .main-nav ul {
